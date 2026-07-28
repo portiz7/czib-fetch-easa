@@ -1,6 +1,6 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-07-28T22:07:31.375387+00:00",
+  "fetched_at": "2026-07-28T22:14:18.143180+00:00",
   "czibs": [
     {
       "czib_number": "CZIB-2026-08",
@@ -276,7 +276,9 @@
           "url": null
         }
       ],
-      "affected_FIRs": []
+      "affected_FIRs": [
+        "OAKX FIR"
+      ]
     },
     {
       "czib_number": "CZIB-2017-07R19",
@@ -451,7 +453,8 @@
         "OLBB FIR",
         "OOMM FIR",
         "OTDF FIR",
-        "OMAE FIR"
+        "OMAE FIR",
+        "OEJD FIR"
       ]
     },
     {
@@ -721,7 +724,9 @@
           "url": null
         }
       ],
-      "affected_FIRs": []
+      "affected_FIRs": [
+        "HECC FIR"
+      ]
     },
     {
       "czib_number": "2022-02R2",
@@ -771,7 +776,9 @@
           "url": null
         }
       ],
-      "affected_FIRs": []
+      "affected_FIRs": [
+        "OEJD FIR"
+      ]
     },
     {
       "czib_number": "CZIB-2020-01R2",
