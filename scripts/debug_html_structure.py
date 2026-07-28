@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Throwaway debug script - dumps real HTML structure of the CZIB listing
-page and one detail page so the real scraper can be written against actual
-markup instead of guesses. Not part of the pipeline; delete after use."""
+"""Throwaway debug script round 2 - targets the actual content region of the
+listing table and a detail page, skipping the huge nav mega-menu."""
 import re
 import sys
 
@@ -10,6 +9,7 @@ from bs4 import BeautifulSoup
 
 HEADERS = {"User-Agent": "Mozilla/5.0 (compatible; ConflictZoneDashboardBot/1.0)"}
 LIST_URL = "https://www.easa.europa.eu/en/domains/air-operations/czibs"
+DETAIL_URL = "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08"
 
 
 def log(msg):
@@ -21,44 +21,55 @@ def main():
     r.raise_for_status()
     soup = BeautifulSoup(r.text, "html.parser")
 
-    links = soup.find_all("a", href=re.compile(r"/czibs/czib-", re.IGNORECASE))
-    log(f"=== LISTING PAGE: {len(links)} links matching /czibs/czib- ===")
-    seen = set()
-    sample_hrefs = []
-    for a in links:
-        href = a.get("href")
-        if href in seen:
-            continue
-        seen.add(href)
-        sample_hrefs.append(href)
-        # Print the link's own text plus a bit of surrounding row/card context
-        parent_text = a.find_parent(["tr", "article", "li", "div"])
-        ctx = parent_text.get_text(" ", strip=True)[:200] if parent_text else ""
-        log(f"  href={href!r} text={a.get_text(' ', strip=True)!r} ctx={ctx!r}")
+    tables = soup.find_all("table")
+    log(f"=== {len(tables)} tables on listing page ===")
+    for i, t in enumerate(tables):
+        log(f"--- table {i}: class={t.get('class')} id={t.get('id')} ---")
+        thead = t.find("thead")
+        if thead:
+            log(f"  headers: {[th.get_text(' ', strip=True) for th in thead.find_all(['th','td'])]}")
+        rows = t.find("tbody").find_all("tr") if t.find("tbody") else t.find_all("tr")
+        log(f"  {len(rows)} rows")
+        for row in rows[:2]:
+            cells = row.find_all(["td", "th"])
+            log(f"  row cells ({len(cells)}): {[c.get_text(' ', strip=True) for c in cells]}")
+            for c in cells:
+                a = c.find("a", href=True)
+                if a:
+                    log(f"    cell link: href={a['href']!r}")
 
-    log(f"=== total tables on listing page: {len(soup.find_all('table'))} ===")
-
-    if not sample_hrefs:
-        log("No detail links found via regex - dumping first 3000 chars of body text for manual inspection")
-        log(soup.get_text(" ", strip=True)[:3000])
-        return
-
-    detail_href = sample_hrefs[0]
-    detail_url = detail_href if detail_href.startswith("http") else f"https://www.easa.europa.eu{detail_href}"
-    log(f"=== FETCHING DETAIL PAGE: {detail_url} ===")
-    r2 = requests.get(detail_url, headers=HEADERS, timeout=20)
+    log("")
+    log(f"=== DETAIL PAGE: {DETAIL_URL} ===")
+    r2 = requests.get(DETAIL_URL, headers=HEADERS, timeout=20)
     r2.raise_for_status()
     soup2 = BeautifulSoup(r2.text, "html.parser")
 
-    for tag in ["h1", "h2", "h3", "h4", "dt", "strong", "b"]:
-        found = soup2.find_all(tag)
-        if found:
-            log(f"--- <{tag}> tags ({len(found)}) ---")
-            for el in found[:25]:
-                log(f"  {el.get_text(' ', strip=True)[:150]!r}")
+    main_tag = soup2.find("main")
+    log(f"<main> found: {main_tag is not None}")
+    if main_tag:
+        log(f"<main> attrs: {main_tag.attrs}")
+        log("=== <main> full text ===")
+        log(main_tag.get_text("\n", strip=True)[:8000])
+    else:
+        # Fallback: locate via the "Note:" strong tag or "Referenced publication" heading
+        anchor = soup2.find("strong", string=re.compile("Note", re.IGNORECASE)) or \
+                 soup2.find(string=re.compile("Referenced publication", re.IGNORECASE))
+        if anchor:
+            container = anchor.find_parent(["div", "section", "article"])
+            hops = 0
+            while container and hops < 4:
+                text = container.get_text(" ", strip=True)
+                if len(text) > 200:
+                    break
+                container = container.find_parent(["div", "section", "article"])
+                hops += 1
+            log(f"=== fallback container (class={container.get('class') if container else None}) text ===")
+            log(container.get_text("\n", strip=True)[:8000] if container else "NOT FOUND")
 
-    log("=== full page text, first 6000 chars ===")
-    log(soup2.get_text("\n", strip=True)[:6000])
+    log("")
+    log("=== all elements with class containing 'field' or 'content' (first 15, name+class only) ===")
+    for el in soup2.find_all(class_=re.compile("field|content", re.IGNORECASE))[:15]:
+        log(f"  <{el.name} class={el.get('class')}> text[:80]={el.get_text(' ', strip=True)[:80]!r}")
 
 
 if __name__ == "__main__":
