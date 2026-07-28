@@ -1,6 +1,6 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-07-28T22:05:44.538483+00:00",
+  "fetched_at": "2026-07-28T22:07:31.375387+00:00",
   "czibs": [
     {
       "czib_number": "CZIB-2026-08",
@@ -55,7 +55,11 @@
         }
       ],
       "affected_FIRs": [
-        "OOMM FIR"
+        "OOMM FIR",
+        "OBBB FIR",
+        "OKAC FIR",
+        "OTDF FIR",
+        "OMAE FIR"
       ]
     },
     {
@@ -438,7 +442,16 @@
         }
       ],
       "affected_FIRs": [
-        "OIIX FIR"
+        "OIIX FIR",
+        "OBBB FIR",
+        "ORBB FIR",
+        "LLLL FIR",
+        "OJAC FIR",
+        "OKAC FIR",
+        "OLBB FIR",
+        "OOMM FIR",
+        "OTDF FIR",
+        "OMAE FIR"
       ]
     },
     {
@@ -544,7 +557,13 @@
           "url": null
         }
       ],
-      "affected_FIRs": []
+      "affected_FIRs": [
+        "OIIX FIR",
+        "ORBB FIR",
+        "LLLL FIR",
+        "OJAC FIR",
+        "OLBB FIR"
+      ]
     },
     {
       "czib_number": "2024-03-R2",
@@ -620,7 +639,9 @@
           "url": null
         }
       ],
-      "affected_FIRs": []
+      "affected_FIRs": [
+        "OLBB FIR"
+      ]
     },
     {
       "czib_number": "CZIB-2018-03R15",
@@ -846,7 +867,9 @@
           "url": null
         }
       ],
-      "affected_FIRs": []
+      "affected_FIRs": [
+        "ORBB FIR"
+      ]
     },
     {
       "czib_number": "SIB-2014-21R1",
