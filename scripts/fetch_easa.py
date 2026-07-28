@@ -64,17 +64,16 @@ def _extract_countries(text):
     return seen
 
 
-def _slugify_id(area_text, index):
+def _slugify_id(countries, index):
     """Information Notes have no bulletin-number-like field anywhere on the
     page (confirmed - the table has only Area covered/Issue date/Valid
     until/Overview of recommendations columns), so there's no real ID to
-    extract. Derives a readable one from the subject instead of a bare
-    index, falling back to "IN-{index}" if that fails."""
-    m = re.search(r"airspace of ([A-Za-z][^(.:]*?)(?:\s+Airspace affected\b|[(.:]|$)", area_text)
-    if m:
-        phrase = re.sub(r"^(the|a|an)\s+", "", m.group(1).strip(), flags=re.IGNORECASE)
-        words = phrase.split()[:5]  # capped so long country lists don't produce unreadable IDs
-        name = re.sub(r"[^A-Za-z]+", "-", " ".join(words)).strip("-").upper()
+    extract. Built from the countries actually detected in this row (so it
+    stays consistent with the Countries column) rather than from a
+    truncated slice of the free-text subject; falls back to "IN-{index}"
+    only if no countries were detected at all."""
+    if countries:
+        name = re.sub(r"[^A-Za-z]+", "-", "-".join(countries)).strip("-").upper()
         if name:
             return f"IN-{name}"
     return f"IN-{index}"
@@ -120,10 +119,25 @@ def fetch_easa_information_notes():
             area_covered = _clean(cells[0].get_text(" ", strip=True))
             issue_date = _clean(cells[1].get_text(" ", strip=True))
             valid_until = _clean(cells[2].get_text(" ", strip=True))
-            recommendations = _clean(cells[3].get_text(" ", strip=True))
+            overview = _clean(cells[3].get_text(" ", strip=True))
+
+            if "supersed" in overview.lower():
+                # Its own text says (all or part of) this note has been
+                # superseded by a newer CZIB - operators should be looking
+                # at that CZIB instead, so the whole row is dropped rather
+                # than shown as if still fully in effect.
+                log(f"  row {i} contains superseded content - excluded ({area_covered[:60]}...)")
+                continue
+
+            countries = _extract_countries(area_covered)
+            # Area covered often carries operationally important qualifiers
+            # (altitude floors, sub-regions - e.g. "below FL260", "north of
+            # 8.5°N latitude") that only live in this column, not in Overview
+            # of the recommendations. Concatenated so nothing gets lost.
+            recommendations = _clean(f"{area_covered} {overview}")
 
             notes.append({
-                "id": _slugify_id(area_covered, i),
+                "id": _slugify_id(countries, i),
                 "status": "N/A",
                 "issue_date": issue_date,
                 "revision_date": "N/A",
@@ -131,7 +145,7 @@ def fetch_easa_information_notes():
                 "subject": "N/A",
                 "more_info_url": "N/A",
                 "affected_airspace": "N/A",
-                "affected_countries": _extract_countries(area_covered),
+                "affected_countries": countries,
                 "description": "N/A",
                 "recommendations": recommendations,
                 "applies_to_operators": "N/A",
