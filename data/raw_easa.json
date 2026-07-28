@@ -1,6 +1,6 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-07-28T22:23:53.801786+00:00",
+  "fetched_at": "2026-07-28T22:32:43.392334+00:00",
   "czibs": [
     {
       "czib_number": "CZIB-2026-08",
@@ -905,33 +905,6 @@
   ],
   "information_notes": [
     {
-      "id": "IN-MIDDLE-EAST-AND-PERSIAN-GULF",
-      "status": "N/A",
-      "issue_date": "14/07/2026",
-      "revision_date": "N/A",
-      "valid_until": "31/08/2026",
-      "subject": "N/A",
-      "more_info_url": "N/A",
-      "affected_airspace": "N/A",
-      "affected_countries": [
-        "Israel",
-        "Jordan",
-        "Oman",
-        "Saudi Arabia"
-      ],
-      "description": "N/A",
-      "recommendations": "Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions. Note: The recommendations applicable to Jordan contained in this Information Note are superseded by the recommendations set out in the CZIB on the airspace of Jordan issued on 22 July 2026 (ref CZIB-2026-08 ).",
-      "applies_to_operators": "N/A",
-      "applicability_description": "N/A",
-      "referenced_publications": "N/A",
-      "affected_FIRs": [
-        "LLLL FIR",
-        "OJAC FIR",
-        "OOMM FIR",
-        "OEJD FIR"
-      ]
-    },
-    {
       "id": "IN-ETHIOPIA",
       "status": "N/A",
       "issue_date": "30/04/2026",
@@ -944,7 +917,7 @@
         "Ethiopia"
       ],
       "description": "N/A",
-      "recommendations": "Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
+      "recommendations": "Information Note on the threat and risk situation in the airspace of Ethiopia (FIR Addis Ababa - HAAA) Airspace affected: Ethiopia (FIR Addis Ababa - HAAA), in particular northern parts - north of 8.5°N latitude - below FL260. Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
       "applies_to_operators": "N/A",
       "applicability_description": "N/A",
       "referenced_publications": "N/A",
@@ -965,7 +938,7 @@
         "Myanmar"
       ],
       "description": "N/A",
-      "recommendations": "Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
+      "recommendations": "Information Note on threat and risk situation in the airspace of Myanmar (FIR Yangon - VYYF) Airspace affected: Airspace above the territory of Myanmar (FIR Yangon – VYYF), below FL 260 Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
       "applies_to_operators": "N/A",
       "applicability_description": "N/A",
       "referenced_publications": "N/A",
