@@ -30,6 +30,7 @@ import requests
 from bs4 import BeautifulSoup
 
 from scrape_easa_czibs import scrape_all as scrape_easa_czibs
+from scrape_easa_czibs import extract_firs
 
 EASA_IN_URL = "https://www.easa.europa.eu/en/domains/air-operations/czibs/information"
 
@@ -42,8 +43,58 @@ def log(msg):
     print(f"[fetch_easa] {msg}", file=sys.stderr)
 
 
+def _clean(text):
+    return re.sub(r"\s+", " ", (text or "")).strip()
+
+
+def _extract_countries(text):
+    """Countries in this table always precede a "(... FIR ...)" parenthetical,
+    e.g. "Israel (Tel Aviv FIR – LLLL), Jordan (Amman FIR – OJAC)" - confirmed
+    against all 3 live rows. Matches only capitalized word sequences right
+    before such a parenthetical, so surrounding prose ("and", "in the") is
+    never swept in."""
+    if not text:
+        return []
+    countries = re.findall(r"\b([A-Z][a-zA-Z]*(?:\s[A-Z][a-zA-Z]*)*)\s*\([^)]*FIR[^)]*\)", text)
+    seen = []
+    for c in countries:
+        c = c.strip()
+        if c and c not in seen:
+            seen.append(c)
+    return seen
+
+
+def _slugify_id(area_text, index):
+    """Information Notes have no bulletin-number-like field anywhere on the
+    page (confirmed - the table has only Area covered/Issue date/Valid
+    until/Overview of recommendations columns), so there's no real ID to
+    extract. Derives a readable one from the subject instead of a bare
+    index, falling back to "IN-{index}" if that fails."""
+    m = re.search(r"airspace of ([A-Za-z][^(.:]*?)(?:\s+Airspace affected\b|[(.:]|$)", area_text)
+    if m:
+        phrase = re.sub(r"^(the|a|an)\s+", "", m.group(1).strip(), flags=re.IGNORECASE)
+        words = phrase.split()[:5]  # capped so long country lists don't produce unreadable IDs
+        name = re.sub(r"[^A-Za-z]+", "-", " ".join(words)).strip("-").upper()
+        if name:
+            return f"IN-{name}"
+    return f"IN-{index}"
+
+
 def fetch_easa_information_notes():
-    """Public metadata for Information Notes (medium-risk, non-CZIB) zones."""
+    """
+    Public Information Notes table (medium-risk, non-CZIB zones) - full text
+    is gated behind the EASA CZ Hub login, but this summary table is public.
+
+    Real table structure (confirmed via a live fetch): a single <table
+    class="cols-4"> with headers ["Area covered", "Issue date", "Valid
+    until", "Overview of the recommendations *"]. There is no separate
+    subject/ID/description/applicability column - "Area covered" mixes the
+    note's title and its actual area-covered text in one cell, and that's
+    genuinely everything this page exposes. Per explicit instruction, only
+    id/issue_date/valid_until/affected_countries/affected_FIRs/recommendations
+    are populated from real data here; every other field mirrors the CZIB
+    schema shape but is left "N/A" since this page has no such data at all.
+    """
     try:
         r = requests.get(EASA_IN_URL, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
@@ -52,19 +103,46 @@ def fetch_easa_information_notes():
         log(f"EASA Information Notes fetch failed: {e}")
         return []
 
+    table = soup.find("table")
+    if not table:
+        log("No table found on Information Notes page - structure may have changed")
+        return []
+
+    body = table.find("tbody")
+    rows = body.find_all("tr") if body else table.find_all("tr")
+
     notes = []
-    # Best-effort: look for table rows that mention a date pattern. This
-    # section of EASA's site is metadata-only by design (full text is
-    # CZ Hub-restricted), so we only expect area + dates here.
-    rows = soup.select("table tr") or []
-    for row in rows:
-        text = row.get_text(" ", strip=True)
-        if not text or "Area" in text:
-            continue
-        dates = re.findall(r"\d{2}/\d{2}/\d{4}", text)
-        if dates:
-            notes.append({"raw_text": text, "dates_found": dates})
-    log(f"EASA Information Notes rows parsed: {len(notes)}")
+    for i, row in enumerate(rows, start=1):
+        try:
+            cells = row.find_all(["td", "th"])
+            if len(cells) < 4:
+                continue
+            area_covered = _clean(cells[0].get_text(" ", strip=True))
+            issue_date = _clean(cells[1].get_text(" ", strip=True))
+            valid_until = _clean(cells[2].get_text(" ", strip=True))
+            recommendations = _clean(cells[3].get_text(" ", strip=True))
+
+            notes.append({
+                "id": _slugify_id(area_covered, i),
+                "status": "N/A",
+                "issue_date": issue_date,
+                "revision_date": "N/A",
+                "valid_until": valid_until,
+                "subject": "N/A",
+                "more_info_url": "N/A",
+                "affected_airspace": "N/A",
+                "affected_countries": _extract_countries(area_covered),
+                "description": "N/A",
+                "recommendations": recommendations,
+                "applies_to_operators": "N/A",
+                "applicability_description": "N/A",
+                "referenced_publications": "N/A",
+                "affected_FIRs": extract_firs(area_covered),
+            })
+        except Exception as e:
+            log(f"  skipped one Information Note row: {e}")
+
+    log(f"EASA Information Notes parsed: {len(notes)}")
     return notes
 
 
