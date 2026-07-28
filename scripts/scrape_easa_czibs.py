@@ -121,7 +121,7 @@ def extract_firs(text):
     codes += re.findall(r"FIR\s+[^().]*?\(([A-Z]{4})\)", text)  # "FIR Amman (OJAC)" form
     codes += re.findall(r"FIR\s*[–‒-]\s*([A-Z]{4})\b", text)  # "Bahrain FIR – OBBB" form
     codes += re.findall(r"\(FIR\s+([A-Z]{4})\)", text)  # "(FIR OAKX)" form
-    codes += re.findall(r"FIR\s+[A-Za-z']+\s*[-–‒]\s*([A-Z]{4})\b", text)  # "FIR Kabul - OAKX" form
+    codes += re.findall(r"FIR\s+[A-Za-z'\s]+?[-–‒]\s*([A-Z]{4})\b", text)  # "FIR Kabul - OAKX" / "FIR Addis Ababa - HAAA" form
     seen = []
     for c in codes:
         if c not in seen:
