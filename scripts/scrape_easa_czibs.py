@@ -101,17 +101,23 @@ def _clean(text):
 
 def extract_firs(text):
     """
-    Detect ICAO FIR codes mentioned in free text. Real EASA CZIB text writes
-    "FIR <name> (<ICAO>)" (e.g. "FIR Amman (OJAC)") - the originally
-    suggested r"\\b[A-Z]{4}\\s+FIR\\b" pattern ("<ICAO> FIR") does NOT match
-    that and was confirmed empty against a real bulletin, so both forms are
-    checked here. Always returns results normalized to "<ICAO> FIR".
+    Detect ICAO FIR codes mentioned in free text. Real EASA CZIB text uses
+    at least three different phrasings, confirmed against live bulletins:
+      - "FIR Amman (OJAC)"                    - name, then code in parens
+      - "Bahrain (Bahrain FIR – OBBB)"         - name FIR <en-dash> code
+      - "OJAC FIR"                             - the originally-suggested form
+    The originally-suggested r"\\b[A-Z]{4}\\s+FIR\\b" pattern only covers the
+    third case and was confirmed to match NOTHING on a real single-country
+    bulletin, and to catch only 1 of 5 codes on the multi-country Gulf one
+    (which uses the second form) - all three are checked here. Always
+    returns results normalized to "<ICAO> FIR".
     """
     if not text:
         return []
     codes = []
     codes += re.findall(r"\b([A-Z]{4})\s+FIR\b", text)  # "OJAC FIR" form
-    codes += re.findall(r"FIR\s+[^().]*?\(([A-Z]{4})\)", text)  # real "FIR Amman (OJAC)" form
+    codes += re.findall(r"FIR\s+[^().]*?\(([A-Z]{4})\)", text)  # "FIR Amman (OJAC)" form
+    codes += re.findall(r"FIR\s*[–‒-]\s*([A-Z]{4})\b", text)  # "Bahrain FIR – OBBB" form
     seen = []
     for c in codes:
         if c not in seen:
