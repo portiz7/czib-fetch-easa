@@ -10,7 +10,7 @@ Fetches the two genuinely public, no-login EASA sources:
 
 Output: data/raw_easa.json — raw, unprocessed data for this source only.
 Cleaning, deduplication and cross-referencing against other sources happens
-downstream in the czib-combine repo, not here.
+downstream in the conflict-zones-combine repo, not here.
 
 This is intentionally conservative: if a source's HTML/JSON structure has
 changed and a parser can't confidently extract something, it skips that item

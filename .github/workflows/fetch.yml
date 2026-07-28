@@ -3,7 +3,7 @@ name: Fetch EASA CZIBs
 on:
   schedule:
     # Every 6 hours, UTC. First of the two source repos in the pipeline —
-    # czib-combine runs on its own, later, staggered cron.
+    # conflict-zones-combine runs on its own, later, staggered cron.
     - cron: '0 */6 * * *'
   workflow_dispatch: {}   # lets you click "Run workflow" manually in the Actions tab
 

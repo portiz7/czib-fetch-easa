@@ -5,7 +5,7 @@ Source repo 1 of 2 in a small pipeline that feeds the
 
 ```
 czib-fetch-easa       (this repo)  ─┐
-czib-fetch-opsgroup                 ├─▶ czib-combine ─▶ Test_2_CZIB (dashboard)
+czib-fetch-opsgroup                 ├─▶ conflict-zones-combine ─▶ Test_2_CZIB (dashboard)
                                     ─┘
 ```
 
@@ -22,7 +22,7 @@ Every 6 hours (and on manual `workflow_dispatch`), `scripts/fetch_easa.py`:
 
 This repo does **no** cleaning, deduplication, cross-referencing with other sources, or
 AI synthesis — that all happens downstream in
-[czib-combine](https://github.com/portiz7/czib-combine), which reads this repo's
+[conflict-zones-combine](https://github.com/portiz7/conflict-zones-combine), which reads this repo's
 `data/raw_easa.json` directly over `https://raw.githubusercontent.com/...` (this repo is
 public specifically so that read needs no auth token).
 
