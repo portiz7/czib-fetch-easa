@@ -292,8 +292,18 @@ def parse_czib_detail(url):
     valid_until = m.group(0) if m else valid_until_raw
 
     affected_airspace = joined("Affected Airspace")
-    affected_countries_raw = joined("Affected Countries")
-    affected_countries = [c.strip() for c in re.split(r"[,\n]", affected_countries_raw) if c.strip()]
+    # NOT joined()+re-split: each country is its own line in the source HTML
+    # (e.g. ["Bahrain", "Kuwait", ..., "United Arab Emirates"]) - joining them
+    # with spaces first and then trying to re-split on comma/newline destroys
+    # that boundary (confirmed against live data: produced one fused string
+    # "Bahrain Kuwait Qatar Oman United Arab Emirates" instead of 5 entries).
+    # A line can *also* itself be comma-separated, so split each line on "," too.
+    affected_countries = []
+    for line in sections.get("Affected Countries", []):
+        for part in line.split(","):
+            part = part.strip()
+            if part:
+                affected_countries.append(part)
 
     applicability_raw = joined("Applicability").lower()
     applies_to_operators = "applies to operators" in applicability_raw and "not" not in applicability_raw
