@@ -101,16 +101,18 @@ def _clean(text):
 
 def extract_firs(text):
     """
-    Detect ICAO FIR codes mentioned in free text. Real EASA CZIB text uses
-    at least three different phrasings, confirmed against live bulletins:
-      - "FIR Amman (OJAC)"                    - name, then code in parens
-      - "Bahrain (Bahrain FIR – OBBB)"         - name FIR <en-dash> code
-      - "OJAC FIR"                             - the originally-suggested form
+    Detect ICAO FIR codes mentioned in free text. Real EASA CZIB text uses at
+    least FIVE different phrasings, each confirmed against a live bulletin:
+      - "FIR Amman (OJAC)"              - name, then code in parens
+      - "Bahrain (Bahrain FIR – OBBB)"  - FIR immediately followed by dash+code
+      - "(FIR OAKX)"                    - FIR+code together inside parens, no name
+      - "FIR Kabul - OAKX"              - FIR, then a name word, then dash+code
+      - "OJAC FIR"                      - the originally-suggested form
     The originally-suggested r"\\b[A-Z]{4}\\s+FIR\\b" pattern only covers the
-    third case and was confirmed to match NOTHING on a real single-country
-    bulletin, and to catch only 1 of 5 codes on the multi-country Gulf one
-    (which uses the second form) - all three are checked here. Always
-    returns results normalized to "<ICAO> FIR".
+    last case. Confirmed empty against a real single-country bulletin, caught
+    only 1/5 codes on the Gulf bulletin, and missed Afghanistan's FIR entirely
+    (it uses the 3rd and 4th forms, added after that gap was found) - all
+    five are checked here. Always returns results normalized to "<ICAO> FIR".
     """
     if not text:
         return []
@@ -118,6 +120,8 @@ def extract_firs(text):
     codes += re.findall(r"\b([A-Z]{4})\s+FIR\b", text)  # "OJAC FIR" form
     codes += re.findall(r"FIR\s+[^().]*?\(([A-Z]{4})\)", text)  # "FIR Amman (OJAC)" form
     codes += re.findall(r"FIR\s*[–‒-]\s*([A-Z]{4})\b", text)  # "Bahrain FIR – OBBB" form
+    codes += re.findall(r"\(FIR\s+([A-Z]{4})\)", text)  # "(FIR OAKX)" form
+    codes += re.findall(r"FIR\s+[A-Za-z']+\s*[-–‒]\s*([A-Z]{4})\b", text)  # "FIR Kabul - OAKX" form
     seen = []
     for c in codes:
         if c not in seen:
