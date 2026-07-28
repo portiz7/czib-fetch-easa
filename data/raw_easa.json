@@ -1,7 +1,177 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-07-28T21:46:21.550370+00:00",
-  "czibs": [],
+  "fetched_at": "2026-07-28T21:49:43.761846+00:00",
+  "czibs": [
+    {
+      "nid": "20582",
+      "title": "Airspace of Libya",
+      "status": "Active",
+      "countries": [
+        "Libya"
+      ],
+      "issue_date": "2017-03-31T00:00:00+0300",
+      "valid_until": "31/01/2027",
+      "coordinates": "27.0331541, 14.4316929"
+    },
+    {
+      "nid": "20574",
+      "title": "Airspace of Afghanistan",
+      "status": "Active",
+      "countries": [
+        "Afghanistan"
+      ],
+      "issue_date": "2017-10-17T00:00:00+0300",
+      "valid_until": "31/01/2027",
+      "coordinates": "34.5260131, 69.1776476"
+    },
+    {
+      "nid": "20587",
+      "title": "Airspace of Pakistan – Baluchistan and Khyber Pakhtunkhwa provinces",
+      "status": "Active",
+      "countries": [
+        "Pakistan"
+      ],
+      "issue_date": "2018-01-10T00:00:00+0200",
+      "valid_until": "31/01/2027",
+      "coordinates": "25.1446897, 67.184776731573"
+    },
+    {
+      "nid": "136057",
+      "title": "Airspace of Ukraine",
+      "status": "Active",
+      "countries": [
+        "Ukraine"
+      ],
+      "issue_date": "2022-02-24T00:00:00+0200",
+      "valid_until": "31/01/2027",
+      "coordinates": ""
+    },
+    {
+      "nid": "137874",
+      "title": "Airspace of Sudan",
+      "status": "Active",
+      "countries": [
+        "Sudan"
+      ],
+      "issue_date": "2023-04-26T00:00:00+0300",
+      "valid_until": "31/01/2027",
+      "coordinates": ""
+    },
+    {
+      "nid": "141480",
+      "title": "Airspace of the Russian Federation",
+      "status": "Active",
+      "countries": [
+        "Russia"
+      ],
+      "issue_date": "2025-01-09T00:00:00+0200",
+      "valid_until": "31/01/2027",
+      "coordinates": ""
+    },
+    {
+      "nid": "143944",
+      "title": "Airspace of Jordan",
+      "status": "Active",
+      "countries": [
+        "Jordan"
+      ],
+      "issue_date": "2026-07-22T00:00:00+0300",
+      "valid_until": "31/08/2026",
+      "coordinates": ""
+    },
+    {
+      "nid": "143899",
+      "title": "Airspace of the Persian Gulf and Gulf of Oman",
+      "status": "Active",
+      "countries": [
+        "Bahrain",
+        "Kuwait",
+        "Qatar",
+        "Oman",
+        "United Arab Emirates"
+      ],
+      "issue_date": "2026-07-14T00:00:00+0300",
+      "valid_until": "31/08/2026",
+      "coordinates": ""
+    },
+    {
+      "nid": "143863",
+      "title": "Airspace of Lebanon",
+      "status": "Active",
+      "countries": [
+        "Lebanon"
+      ],
+      "issue_date": "2026-07-08T00:00:00+0300",
+      "valid_until": "31/08/2026",
+      "coordinates": ""
+    },
+    {
+      "nid": "143862",
+      "title": "Airspace of Iraq",
+      "status": "Active",
+      "countries": [
+        "Iraq"
+      ],
+      "issue_date": "2026-07-08T00:00:00+0300",
+      "valid_until": "31/08/2026",
+      "coordinates": ""
+    },
+    {
+      "nid": "143861",
+      "title": "Airspace of Iran",
+      "status": "Active",
+      "countries": [
+        "Iran"
+      ],
+      "issue_date": "2026-07-08T00:00:00+0300",
+      "valid_until": "31/08/2026",
+      "coordinates": ""
+    },
+    {
+      "nid": "20599",
+      "title": "Airspace of Syria",
+      "status": "Active",
+      "countries": [
+        "Syria"
+      ],
+      "issue_date": "2017-03-31T00:00:00+0300",
+      "valid_until": "31/10/2026",
+      "coordinates": "33.5130695, 36.3095814"
+    },
+    {
+      "nid": "20602",
+      "title": "Airspace of Yemen – Sana’a Flight Information Region",
+      "status": "Active",
+      "countries": [
+        "Yemen"
+      ],
+      "issue_date": "2017-08-31T00:00:00+0300",
+      "valid_until": "31/10/2026",
+      "coordinates": "15.342101, 44.2005197"
+    },
+    {
+      "nid": "20589",
+      "title": "Airspace of Somalia",
+      "status": "Active",
+      "countries": [
+        "Somalia"
+      ],
+      "issue_date": "2017-03-31T00:00:00+0300",
+      "valid_until": "31/10/2026",
+      "coordinates": "2.042778, 45.338564"
+    },
+    {
+      "nid": "20585",
+      "title": "Airspace of Mali",
+      "status": "Active",
+      "countries": [
+        "Mali"
+      ],
+      "issue_date": "2017-03-31T00:00:00+0300",
+      "valid_until": "31/10/2026",
+      "coordinates": "12.60503275, -7.9865136734394"
+    }
+  ],
   "information_notes": [
     {
       "raw_text": "Information Note on the threat and risk situation in the airspace of the Middle East and Persian Gulf Airspace affected: All altitudes/flight levels in the airspace of: Israel (Tel Aviv FIR – LLLL), Jordan (Amman FIR – OJAC), Oman (Muscat FIR – OOMM) and Saudi Arabia (FIR Jeddah - OEJD). 14/07/2026 31/08/2026 Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions. Note: The recommendations applicable to Jordan contained in this Information Note are superseded by the recommendations set out in the CZIB on the airspace of Jordan issued on 22 July 2026 (ref CZIB-2026-08 ).",
