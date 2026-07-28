@@ -39,7 +39,28 @@ def log(msg):
 
 
 def fetch_easa_czibs():
-    """Public JSON export of all CZIBs, no auth required."""
+    """
+    Public JSON export of all CZIBs, no auth required.
+
+    Real response shape (confirmed against a live run — the export does NOT
+    use Drupal-style field_* keys, and does NOT expose a formal bulletin
+    number like "CZIB-2026-04", only an internal node id):
+
+    {
+      "conflict_zones": [
+        {
+          "Nid": "143944",
+          "issued_date": "2026-07-22T00:00:00+0300",
+          "valid_until_date": "31/08/2026",
+          "name": "Airspace of Jordan",
+          "status": "Active",
+          "country": "Jordan",              <- comma-separated for multi-country bulletins
+          "coordinates": "31.9, 35.9",       <- often empty
+          "updated": "<time datetime=...>...</time>"
+        }, ...
+      ]
+    }
+    """
     try:
         r = requests.get(EASA_JSON_URL, headers=HEADERS, timeout=TIMEOUT)
         r.raise_for_status()
@@ -48,24 +69,22 @@ def fetch_easa_czibs():
         log(f"EASA CZIB fetch failed: {e}")
         return []
 
-    # TEMP DEBUG - remove once the real field shape is confirmed.
-    log(f"DEBUG raw type={type(data).__name__}")
-    sample = data if isinstance(data, list) else data.get("data", data)
-    log(f"DEBUG sample (first 2 items, raw): {json.dumps(sample[:2] if isinstance(sample, list) else sample, ensure_ascii=False)[:3000]}")
+    items = data.get("conflict_zones", []) if isinstance(data, dict) else []
 
     czibs = []
-    # The export is a list of node dicts; field names mirror the site's
-    # exposed columns. Adjust keys here if EASA changes the export shape.
-    for item in data if isinstance(data, list) else data.get("data", []):
+    for item in items:
         try:
+            if item.get("status") and item["status"] != "Active":
+                continue
+            countries = [c.strip() for c in (item.get("country") or "").split(",") if c.strip()]
             czibs.append({
-                "title": item.get("title") or item.get("field_czib_title", ""),
-                "czib_number": item.get("field_czib_number") or item.get("czib_number", ""),
-                "status": item.get("field_czib_status") or item.get("status", ""),
-                "issue_date": item.get("field_issue_date") or item.get("issue_date", ""),
-                "revision_date": item.get("field_revision_date") or item.get("revision_date", ""),
-                "valid_until": item.get("field_valid_until") or item.get("valid_until", ""),
-                "url": item.get("url") or item.get("path", ""),
+                "nid": item.get("Nid", ""),
+                "title": item.get("name", ""),
+                "status": item.get("status", ""),
+                "countries": countries,
+                "issue_date": item.get("issued_date", ""),
+                "valid_until": item.get("valid_until_date", ""),
+                "coordinates": item.get("coordinates", ""),
             })
         except Exception as e:
             log(f"  skipped one EASA CZIB row: {e}")
