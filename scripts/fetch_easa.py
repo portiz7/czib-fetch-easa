@@ -48,6 +48,11 @@ def fetch_easa_czibs():
         log(f"EASA CZIB fetch failed: {e}")
         return []
 
+    # TEMP DEBUG - remove once the real field shape is confirmed.
+    log(f"DEBUG raw type={type(data).__name__}")
+    sample = data if isinstance(data, list) else data.get("data", data)
+    log(f"DEBUG sample (first 2 items, raw): {json.dumps(sample[:2] if isinstance(sample, list) else sample, ensure_ascii=False)[:3000]}")
+
     czibs = []
     # The export is a list of node dicts; field names mirror the site's
     # exposed columns. Adjust keys here if EASA changes the export shape.
