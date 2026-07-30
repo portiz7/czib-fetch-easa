@@ -1,6 +1,6 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-07-29T21:16:12.357750+00:00",
+  "fetched_at": "2026-07-30T09:38:05.994664+00:00",
   "czibs": [
     {
       "czib_number": "CZIB-2026-08",
@@ -905,6 +905,27 @@
   ],
   "information_notes": [
     {
+      "id": "IN-MYANMAR",
+      "status": "N/A",
+      "issue_date": "30/07/2026",
+      "revision_date": "N/A",
+      "valid_until": "31/01/2027",
+      "subject": "N/A",
+      "more_info_url": "N/A",
+      "affected_airspace": "N/A",
+      "affected_countries": [
+        "Myanmar"
+      ],
+      "description": "N/A",
+      "recommendations": "Information Note on threat and risk situation in the airspace of Myanmar (FIR Yangon - VYYF) Airspace affected: Airspace above the territory of Myanmar (FIR Yangon – VYYF), below FL 260 Air operators should: Take potential risks into account when operating in the affected airspace below FL260; Monitor airspace developments in the region and follow all available aeronautical publications, in particular airspace closures or restrictions issued by State authorities, alongside available guidance or direction from their national authorities, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones; Ensure that an up-to-date risk assessment is in place together with a high level of contingency planning for operations.",
+      "applies_to_operators": "N/A",
+      "applicability_description": "N/A",
+      "referenced_publications": "N/A",
+      "affected_FIRs": [
+        "VYYF FIR"
+      ]
+    },
+    {
       "id": "IN-ETHIOPIA",
       "status": "N/A",
       "issue_date": "30/04/2026",
@@ -923,27 +944,6 @@
       "referenced_publications": "N/A",
       "affected_FIRs": [
         "HAAA FIR"
-      ]
-    },
-    {
-      "id": "IN-MYANMAR",
-      "status": "N/A",
-      "issue_date": "30/01/2026",
-      "revision_date": "N/A",
-      "valid_until": "31/07/2026",
-      "subject": "N/A",
-      "more_info_url": "N/A",
-      "affected_airspace": "N/A",
-      "affected_countries": [
-        "Myanmar"
-      ],
-      "description": "N/A",
-      "recommendations": "Information Note on threat and risk situation in the airspace of Myanmar (FIR Yangon - VYYF) Airspace affected: Airspace above the territory of Myanmar (FIR Yangon – VYYF), below FL 260 Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
-      "applies_to_operators": "N/A",
-      "applicability_description": "N/A",
-      "referenced_publications": "N/A",
-      "affected_FIRs": [
-        "VYYF FIR"
       ]
     }
   ]
