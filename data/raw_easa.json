@@ -1,21 +1,21 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-08-31T05:13:55.380474+00:00",
+  "fetched_at": "2026-08-31T13:26:39.577388+00:00",
   "czibs": [
     {
-      "czib_number": "CZIB-2026-08",
+      "czib_number": "CZIB-2026-08-R1",
       "status": "Active",
       "issue_date": "22/07/2026",
-      "revision_date": "",
-      "valid_until": "31/08/2026",
+      "revision_date": "31/08/2026",
+      "valid_until": "30/09/2026",
       "subject": "Airspace of Jordan",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08-r1",
       "affected_airspace": "FIR Amman (OJAC), all altitudes and flight levels.",
       "affected_countries": [
         "Jordan"
       ],
-      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. Following the military conflict between the United States and Iran, a temporary ceasefire was initially announced on 8 April 2026 and remained in effect until 17 June 2026, when both parties signed a Memorandum of Understanding extending it for a further 60 days. However, its implementation has been subject to recurrent and significant violations, creating again a high level of risk across the region. Since the middle of July 2026, the security situation has deteriorated rapidly, with a sustained increase in kinetic military activity affecting Jordanian airspace. Recurrent Iranian missile attacks, and to a lesser extent drone attacks, against assets located in Jordan, together with the activation of air-defence systems, create an increased risk of misidentification of civil aircraft, as well as risks associated with missile overflights, interception activity and falling debris. In terms of airspace management, no conflict-related airspace restrictions, route closures or operational advisories have been issued by the Jordanian authorities despite the recent increase in military activity affecting the airspace. As a result, there are currently limited publicly available mitigating measures on which air operators can rely. Unpredictable military developments, combined with the possible use of missiles, drones, combat aircraft and air-defence systems, create a high risk to civil flights at all altitudes and flight levels within the affected airspace. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
-      "recommendations": "Air operators should: Not operate within the airspace of Jordan, FIR Amman (OJAC), at all altitudes and flight levels; Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities. Note: Recommendations contained in this CZIB supersede the recommendations applicable to Jordan contained in the EASA Information Note on the threat and risk situation in the airspace of the Middle East and Persian Gulf issued on 14 July 2026.",
+      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest. Following the military conflict between the United States and Iran, the regional security situation remains volatile, creating additional risks in the airspace of the affected countries. In July 2026, the security situation deteriorated rapidly, with a sustained increase in kinetic military activity affecting Jordanian airspace. Recurrent Iranian missile attacks, and to a lesser extent drone attacks, against assets located in Jordan, together with the activation of air-defence systems, created an increased risk of misidentification of civil aircraft, as well as risks associated with missile overflights, interception activity and falling debris. In August 2026, the situation improved significantly, with no kinetic activity observed. Nevertheless, should the regional security environment deteriorate again, Jordanian airspace would once more be exposed to additional risks. In terms of airspace management, no conflict-related airspace restrictions, route closures or operational advisories have been issued publicly by the Jordanian authorities despite the recent increase in military activity affecting the airspace. Therefore, operators should be prepared to comply with tactical deconfliction in the event of kinetic activity. A potential for unpredictable military developments, combined with the possible use of missiles, drones, combat aircraft and air-defence systems, create medium level risk to civil flights at all altitudes and flight levels within the affected airspace. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
+      "recommendations": "Air operators should: Take potential risks into account when operating in the affected airspace; Ensure that an up-do-date risk assessment is in place together with a high level of contingency planning for their operations and be ready for short notice instructions from State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
       "applies_to_operators": true,
       "applicability_description": "Air operators: - subject to the provisions of Commission Regulation (EU) 965/2012, planning to conduct operations in the affected airspace (EASA operators). - third Country Operators authorised by EASA, when conducting operations under their TCO authorisation to, from and within the EU (TCO operators).",
       "referenced_publications": [
@@ -29,14 +29,14 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-07R1",
+      "czib_number": "CZIB-2026-07R2",
       "status": "Active",
       "issue_date": "14/07/2026",
-      "revision_date": "22/07/2026",
-      "valid_until": "31/08/2026",
+      "revision_date": "31/08/2026",
+      "valid_until": "30/09/2026",
       "subject": "Airspace of the Persian Gulf and Gulf of Oman",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-07r1",
-      "affected_airspace": "All altitudes and flight levels in the airspace of: - Bahrain (Bahrain FIR – OBBB), - Kuwait (Kuwait FIR – OKAC), - Qatar (Doha FIR – OTDF), - United Arab Emirates (Emirates FIR – OMAE), and - airspace over the waters of the Gulf of Oman within the FIR Muscat (OOMM) west of longitude 58°E.",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-07r2",
+      "affected_airspace": "All altitudes and flight levels in the airspace of: - Bahrain (Bahrain FIR – OBBB), - Kuwait (Kuwait FIR – OKAC), - Qatar (Doha FIR – OTDF), - United Arab Emirates (Emirates FIR – OMAE), and - Oman (FIR Muscat - OOMM).",
       "affected_countries": [
         "Bahrain",
         "Kuwait",
@@ -44,8 +44,8 @@
         "Oman",
         "United Arab Emirates"
       ],
-      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. Following the military conflict between the United States and Iran, a temporary ceasefire was initially announced on 8 April 2026 and remained in effect until 17 June 2026, when both parties signed a Memorandum of Understanding extending it for a further 60 days. However, its implementation has been subject to recurrent and significant violations, creating again, a high level of risk across the Gulf region. Iranian efforts to maintain control over the Strait of Hormuz, recurrent attacks against commercial vessels, and related US military actions create high risks for the airspace of Bahrain, Kuwait, Qatar and the United Arab Emirates, as well as for the airspace over the waters in the Gulf of Oman west of longitude 58°E. The presence of major US military facilities in the region increases the likelihood that the States covered by this CZIB may be directly exposed to Iranian missile and drone attacks. The surrounding maritime airspace may also be affected by missile or drone overflights, interception activity, falling debris and the wider consequences of regional military escalation. The heightened readiness and activation of national and US air-defence systems increase the risk of misidentification, unintended engagement and collateral effects affecting civil aircraft. Military activity may occur with little or no warning in confined airspace, significantly reducing the time available to aircraft operators and air navigation service providers to mitigate exposure through tactical rerouting or timely airspace management measures. Regional authorities have implemented temporary airspace closures and restrictions at different stages of the conflict. However, the unpredictable nature and rapid evolution of military activity may challenge the timely and effective implementation of such measures. Unpredictable military developments, combined with the possible use of missiles, drones, combat aircraft and air-defence systems, create a high risk to civil flights at all altitudes and flight levels within the concerned airspace. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
-      "recommendations": "Air operators should: Not operate within the airspace of Bahrain (Bahrain FIR – OBBB), Kuwait (Kuwait FIR – OKAC), Qatar (Doha FIR – OTDF), the United Arab Emirates (Emirates FIR – OMAE), and the airspace over the waters of the Gulf of Oman within the FIR Muscat (OOMM) west of longitude 58°E, at all altitudes and flight levels; Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
+      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. Following the military conflict between the United States and Iran, the regional security situation remains volatile, creating additional risks in the airspace of the affected countries. Iranian efforts to maintain control over the Strait of Hormuz, recurrent attacks against commercial vessels, and related US military actions create high risks for the airspace over the waters of Bahrain, Kuwait, Qatar and the United Arab Emirates, as well as for the airspace over the waters in the Gulf of Oman west of longitude 58°E. The presence of major US military facilities in the region increases the likelihood that the States covered by this CZIB may be directly exposed to Iranian missile and drone attacks. The surrounding maritime airspace may also be affected by missile or drone overflights, interception activity, falling debris and the wider consequences of regional military escalation. The heightened readiness and activation of national and US air-defence systems increase the risk of misidentification, unintended engagement and collateral effects affecting civil aircraft. Military activity may occur with little or no warning in confined airspace, significantly reducing the time available to aircraft operators and air navigation service providers to mitigate exposure through tactical rerouting or timely airspace management measures. Regional authorities have implemented temporary airspace closures and restrictions at different stages of the conflict. However, the unpredictable nature and rapid evolution of military activity may challenge the timely and effective implementation of such measures. Unpredictable military developments, combined with the possible use of missiles, drones, combat aircraft and air-defence systems, create a high risk to civil flights at all altitudes and flight levels over the waters within the concerned airspace. While risks over the waters of the Persian Gulf remain high, operations necessary for arrivals at or departures from aerodromes within the affected FIRs may be conducted with sufficient mitigation, provided they are based on an up-to-date risk assessment and continuous risk monitoring. Residual risks also remain over the land territory of the affected States, where operators should continue to exercise caution and take account of possible missile and drone activity, air-defence operations and falling debris. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
+      "recommendations": "Air operators should: Not operate at all altitudes and flight levels within the airspace over the waters of the Persian Gulf within FIR Bahrain (OBBB), FIR Kuwait (OKAC), FIR Doha (OTDF), FIR Emirates (OMAE), except to the extent necessary for arrivals at or departures from aerodromes within the affected FIRs. Not operate within the airspace over the waters of the Gulf of Oman within the FIR Muscat (OOMM) west of longitude 58°E at all altitudes and flight levels. Exercise caution and take potential risks into account when operating in the airspace over the land territory within the above mentioned FIRs. Ensure that an up-to-date risk assessment and a high level of contingency planning are in place for operations within the affected airspace, and be prepared for short notice instructions from the State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
       "applies_to_operators": true,
       "applicability_description": "Air operators: - subject to the provisions of Commission Regulation (EU) 965/2012, planning to conduct operations in the affected airspace (EASA operators). - third Country Operators authorised by EASA, when conducting operations under their TCO authorisation to, from and within the EU (TCO operators).",
       "referenced_publications": [
@@ -55,27 +55,27 @@
         }
       ],
       "affected_FIRs": [
-        "OOMM FIR",
         "OBBB FIR",
         "OKAC FIR",
         "OTDF FIR",
-        "OMAE FIR"
+        "OMAE FIR",
+        "OOMM FIR"
       ]
     },
     {
-      "czib_number": "CZIB-2026-06",
+      "czib_number": "CZIB-2026-06-R1",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "",
-      "valid_until": "31/08/2026",
+      "revision_date": "31/08/2026",
+      "valid_until": "30/09/2026",
       "subject": "Airspace of Lebanon",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-06",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-06-r1",
       "affected_airspace": "FIR Beirut (OLBB), all altitudes and flight levels.",
       "affected_countries": [
         "Lebanon"
       ],
-      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. In the context of the military conflict in the Middle East, which began on 28 February 2026 with U.S. and Israeli strikes against Iran, tensions have expanded across the region, including Israeli attacks on targets within Lebanese territory and Hezbollah operations against Israel. Although a ceasefire between Israel and Lebanon, initially agreed on 16 April 2026 and subsequently extended on 23 April and 19 June 2026, has contributed to an overall reduction in the intensity of military operations, recurrent violations have been observed, primarily in southern Lebanon where military operations have continued until recently. These have also included Israeli airstrikes targeting locations deeper within Lebanese territory, also impacting the Beirut metropolitan area. On 26 June 2026, Israel, Lebanon and the United States signed a Trilateral Framework Agreement, marking a further step towards consolidating the ceasefire, although its long-term implementation remains uncertain. In terms of airspace management, the State concerned has not demonstrated capability to address existing airspace risks by implementing an efficient and proactive approach to the airspace deconfliction. As a result, there are limited mitigating factors, on which air operators can rely at present. Given the overall volatility of the situation, the recurrence of military activity affecting the airspace of Lebanon and the limited actions in terms of risk management of the State concerned, there is high risk to civil aircraft at all altitudes and flight levels. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
-      "recommendations": "Air operators should: Not operate within the airspace of Lebanon, FIR Beirut (OLBB), at all altitudes and flight levels; Closely monitor airspace developments in the region and follow all available aeronautical publications, in particular airspace closures or restrictions issued by State authorities, alongside available guidance or direction from their national authorities including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones.",
+      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. In the context of the military conflict in the Middle East, which began on 28 February 2026 with the U.S. and Israeli strikes against Iran, tensions have expanded across the region, including Israeli attacks on targets within Lebanese territory and Hezbollah operations against Israel. A ceasefire between Israel and Lebanon, initially agreed on 16 April 2026 was subsequently extended twice. Furthermore, on 26 June 2026, Israel, Lebanon and the United States signed a Trilateral Framework Agreement, marking a further step towards consolidating the ceasefire, however its long-term implementation remains uncertain. Although, these have contributed to an overall reduction in the intensity of military operations, recurrent violations have been observed in August 2026, primarily in southern Lebanon where military operations have continued. While residual risks remain high, and should be reflected in operators’ risk assessments, it is considered that approaches starting from the sea and departures ending over the sea, based on an up-to-date risk assessment and continuous risk monitoring, provide sufficient mitigation of the risk of misidentification. In terms of airspace management, the State concerned has not demonstrated capability to address existing airspace risks by implementing an efficient and proactive approach to the airspace deconfliction. As a result, there are limited mitigating factors, on which air operators can rely at present. Overall, there is a high-risk in the airspace over the territory of Lebanon, except for operations starting from the sea to Beirut International Airport and departures ending over the sea. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
+      "recommendations": "Air operators should: Not operate within the airspace of Lebanon at all altitudes and flight levels, except for operations to / from Beirut International Airport (BEY / OLBA) under the following conditions: approach starting from the sea / departure ending over the sea, based on an up-to-date risk assessment and continuous risk monitoring. Closely monitor airspace developments in the region and follow all available aeronautical publications, in particular airspace closures or restrictions issued by State authorities, alongside available guidance or direction from their national authorities including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones.",
       "applies_to_operators": true,
       "applicability_description": "Air operators: - subject to the provisions of Commission Regulation (EU) 965/2012, planning to conduct operations in the affected airspace (EASA operators). - third Country Operators authorised by EASA, when conducting operations under their TCO authorisation to, from and within the EU (TCO operators).",
       "referenced_publications": [
@@ -89,13 +89,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-05",
+      "czib_number": "CZIB-2026-05-R1",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "",
-      "valid_until": "31/08/2026",
+      "revision_date": "31/08/2026",
+      "valid_until": "30/09/2026",
       "subject": "Airspace of Iraq",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-05",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-05-r1",
       "affected_airspace": "FIR Baghdad (ORBB), all altitudes and flight levels.",
       "affected_countries": [
         "Iraq"
@@ -115,13 +115,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-04",
+      "czib_number": "CZIB-2026-04-R1",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "",
-      "valid_until": "31/08/2026",
+      "revision_date": "31/08/2026",
+      "valid_until": "30/09/2026",
       "subject": "Airspace of Iran",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-04",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-04-r1",
       "affected_airspace": "FIR Tehran (OIIX), all altitudes and flight levels.",
       "affected_countries": [
         "Iran"
@@ -904,6 +904,48 @@
     }
   ],
   "information_notes": [
+    {
+      "id": "IN-SAUDI-ARABIA",
+      "status": "N/A",
+      "issue_date": "31/08/2026",
+      "revision_date": "N/A",
+      "valid_until": "30/09/2026",
+      "subject": "N/A",
+      "more_info_url": "N/A",
+      "affected_airspace": "N/A",
+      "affected_countries": [
+        "Saudi Arabia"
+      ],
+      "description": "N/A",
+      "recommendations": "Information Note on the threat and risk situation in the airspace of Saudi Arabia (FIR Jeddah - OEJD) Airspace affected: All altitudes/flight levels in the airspace of Saudi Arabia (Tel Jeddah - OEJD). Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
+      "applies_to_operators": "N/A",
+      "applicability_description": "N/A",
+      "referenced_publications": "N/A",
+      "affected_FIRs": [
+        "OEJD FIR"
+      ]
+    },
+    {
+      "id": "IN-ISRAEL",
+      "status": "N/A",
+      "issue_date": "31/08/2026",
+      "revision_date": "N/A",
+      "valid_until": "30/09/2026",
+      "subject": "N/A",
+      "more_info_url": "N/A",
+      "affected_airspace": "N/A",
+      "affected_countries": [
+        "Israel"
+      ],
+      "description": "N/A",
+      "recommendations": "Information Note on the threat and risk situation in the airspace of Israel (FIR Tel Aviv - LLLL) Airspace affected: All altitudes/flight levels in the airspace of Israel (Tel Aviv FIR – LLLL). Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
+      "applies_to_operators": "N/A",
+      "applicability_description": "N/A",
+      "referenced_publications": "N/A",
+      "affected_FIRs": [
+        "LLLL FIR"
+      ]
+    },
     {
       "id": "IN-MYANMAR",
       "status": "N/A",
