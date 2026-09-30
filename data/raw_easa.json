@@ -1,21 +1,47 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-09-30T12:23:10.418786+00:00",
+  "fetched_at": "2026-09-30T22:08:12.725589+00:00",
   "czibs": [
     {
-      "czib_number": "CZIB-2026-08-R1",
+      "czib_number": "CZIB-2026-09",
+      "status": "Active",
+      "issue_date": "30/09/2026",
+      "revision_date": "",
+      "valid_until": "16/11/2026",
+      "subject": "Airspace of Saudi Arabia",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-09",
+      "affected_airspace": "FIR Jeddah (OEJD), all altitudes and flight levels.",
+      "affected_countries": [
+        "Saudi Arabia"
+      ],
+      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and EU Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. As a consequence of the military conflict between the United States and Iran, the regional security situation remains highly volatile, with significant kinetic military activity affecting Saudi airspace. In September 2026, the Houthis have significantly increased the frequency and geographic scope of attacks against Saudi maritime, energy and infrastructure targets, including in the Red Sea and in the Gulf of Aden. Besides oil and energy infrastructures, also military and aviation-related infrastructures across Saudi Arabia have been repeatedly targeted by missiles and drones. While the southern and south-western parts of Saudi airspace remain particularly exposed due to their proximity to Houthi-controlled areas in Yemen, recent attacks have demonstrated the ability and intent of the Houthis to strike targets deeper inside Saudi territory, including in the Riyadh, Tabuk and Yanbu areas. These recurrent missile and drone attacks, together with the activation of air-defence systems, create an increased risk of misidentification of civil aircraft, as well as risks associated with missile and drone overflights, interception activity and falling debris. The expansion of kinetic activity in September 2026 across a wider part of the Kingdom also increases the potential exposure of civil aviation beyond the areas previously affected by Houthi attacks requiring operators to conduct close monitoring and contingency planning. While Saudi Arabia has demonstrated an ability to manage its airspace effectively, including through tactical deconfliction and Emergency Security Control of Air Traffic (ESCAT) measures, the operating environment remains vulnerable to rapid deterioration. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
+      "recommendations": "Air operators should: Not operate, at all flight levels and altitudes, within the airspace of Saudi Arabia defined by the line connecting the following navigation points and the boundary of FIR Jeddah: RIBOK – BOSUT - ISLAM - DEKLO - OBSAM - SILPA. Exercise caution and take potential risks into account when operating in the reminder of the FIR Jeddah. Ensure that an up-to-date risk assessment and a high level of contingency planning are in place for operations within the affected airspace, and be prepared for short notice instructions from the State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
+      "applies_to_operators": true,
+      "applicability_description": "Air operators: - subject to the provisions of Commission Regulation (EU) 965/2012, planning to conduct operations in the affected airspace (EASA operators). - third Country Operators authorised by EASA, when conducting operations under their TCO authorisation to, from and within the EU (TCO operators).",
+      "referenced_publications": [
+        {
+          "title": "Aeronautical Publications issued by or on behalf of Saudi Arabia, by the Aviation Authorities of the neighbouring States and by the State of Operator.",
+          "url": null
+        }
+      ],
+      "affected_FIRs": [
+        "OEJD FIR"
+      ]
+    },
+    {
+      "czib_number": "CZIB-2026-08-R2",
       "status": "Active",
       "issue_date": "22/07/2026",
-      "revision_date": "31/08/2026",
-      "valid_until": "30/09/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "16/10/2026",
       "subject": "Airspace of Jordan",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08-r1",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08-r2",
       "affected_airspace": "FIR Amman (OJAC), all altitudes and flight levels.",
       "affected_countries": [
         "Jordan"
       ],
-      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest. Following the military conflict between the United States and Iran, the regional security situation remains volatile, creating additional risks in the airspace of the affected countries. In July 2026, the security situation deteriorated rapidly, with a sustained increase in kinetic military activity affecting Jordanian airspace. Recurrent Iranian missile attacks, and to a lesser extent drone attacks, against assets located in Jordan, together with the activation of air-defence systems, created an increased risk of misidentification of civil aircraft, as well as risks associated with missile overflights, interception activity and falling debris. In August 2026, the situation improved significantly, with no kinetic activity observed. Nevertheless, should the regional security environment deteriorate again, Jordanian airspace would once more be exposed to additional risks. In terms of airspace management, no conflict-related airspace restrictions, route closures or operational advisories have been issued publicly by the Jordanian authorities despite the recent increase in military activity affecting the airspace. Therefore, operators should be prepared to comply with tactical deconfliction in the event of kinetic activity. A potential for unpredictable military developments, combined with the possible use of missiles, drones, combat aircraft and air-defence systems, create medium level risk to civil flights at all altitudes and flight levels within the affected airspace. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
-      "recommendations": "Air operators should: Take potential risks into account when operating in the affected airspace; Ensure that an up-do-date risk assessment is in place together with a high level of contingency planning for their operations and be ready for short notice instructions from State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
+      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of high risk. As a consequence of the military conflict between the United States and Iran, the regional security situation remains highly volatile, with significant fluctuations in the level of kinetic military activity affecting Jordanian airspace. Periods of relative calm have been followed by renewed attacks, demonstrating the potential for a rapid deterioration with little or no warning. The renewed attacks in early September 2026 indicate deterioration of the security situation and the re-emergence of conditions associated with a high level of risk to civil aviation. Recurrent Iranian missile attacks, and to a lesser extent drone attacks, against assets located in Jordan, together with the activation of air-defence systems, create an increased risk of misidentification of civil aircraft, as well as risks associated with missile overflights, interception activity and falling debris. In terms of airspace management, no conflict-related airspace restrictions, route closures or operational advisories have been issued publicly by the Jordanian authorities despite the recent increase in military activity affecting the airspace. Therefore, operators should be prepared to comply with tactical deconfliction in the event of kinetic activity. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
+      "recommendations": "Air operators should: Not operate within the airspace of Jordan, FIR Amman (OJAC), at all altitudes and flight levels; Ensure that an up-do-date risk assessment is in place together with a high level of contingency planning for their operations and be ready for short notice instructions from State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
       "applies_to_operators": true,
       "applicability_description": "Air operators: - subject to the provisions of Commission Regulation (EU) 965/2012, planning to conduct operations in the affected airspace (EASA operators). - third Country Operators authorised by EASA, when conducting operations under their TCO authorisation to, from and within the EU (TCO operators).",
       "referenced_publications": [
@@ -29,13 +55,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-07R2",
+      "czib_number": "CZIB-2026-07R3",
       "status": "Active",
       "issue_date": "14/07/2026",
-      "revision_date": "31/08/2026",
-      "valid_until": "30/09/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "16/11/2026",
       "subject": "Airspace of the Persian Gulf and Gulf of Oman",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-07r2",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-07r3",
       "affected_airspace": "All altitudes and flight levels in the airspace of: - Bahrain (Bahrain FIR – OBBB), - Kuwait (Kuwait FIR – OKAC), - Qatar (Doha FIR – OTDF), - United Arab Emirates (Emirates FIR – OMAE), and - Oman (FIR Muscat - OOMM).",
       "affected_countries": [
         "Bahrain",
@@ -63,13 +89,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-06-R1",
+      "czib_number": "CZIB-2026-06-R2",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "31/08/2026",
-      "valid_until": "30/09/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "16/11/2026",
       "subject": "Airspace of Lebanon",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-06-r1",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-06-r2",
       "affected_airspace": "FIR Beirut (OLBB), all altitudes and flight levels.",
       "affected_countries": [
         "Lebanon"
@@ -89,13 +115,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-05-R1",
+      "czib_number": "CZIB-2026-05-R2",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "31/08/2026",
-      "valid_until": "30/09/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "16/11/2026",
       "subject": "Airspace of Iraq",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-05-r1",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-05-r2",
       "affected_airspace": "FIR Baghdad (ORBB), all altitudes and flight levels.",
       "affected_countries": [
         "Iraq"
@@ -115,13 +141,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-04-R1",
+      "czib_number": "CZIB-2026-04-R2",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "31/08/2026",
-      "valid_until": "30/09/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "16/11/2026",
       "subject": "Airspace of Iran",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-04-r1",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-04-r2",
       "affected_airspace": "FIR Tehran (OIIX), all altitudes and flight levels.",
       "affected_countries": [
         "Iran"
@@ -281,13 +307,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2017-07R19",
+      "czib_number": "CZIB-2017-07R20",
       "status": "Active",
       "issue_date": "31/08/2017",
-      "revision_date": "12/05/2026",
-      "valid_until": "31/10/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "30/04/2027",
       "subject": "Airspace of Yemen – Sana’a Flight Information Region",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-07r19",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-07r20",
       "affected_airspace": "Airspace of Yemen, Sana’a Flight Information Region (FIR OYSC), all altitudes, except all routes located in the maritime part of FIR SANAA (OYSC) east of route B400.",
       "affected_countries": [
         "Yemen"
@@ -307,13 +333,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2017-01R20",
+      "czib_number": "CZIB-2017-01R21",
       "status": "Active",
       "issue_date": "31/03/2017",
-      "revision_date": "17/04/2026",
-      "valid_until": "31/10/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "30/04/2027",
       "subject": "Airspace of Mali",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-01r20",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-01r21",
       "affected_airspace": "Mali airspace, FIR Niamey (DRRR) and FIR Dakar (GOOO) at altitudes below Flight Level (FL) 260.",
       "affected_countries": [
         "Mali"
@@ -386,13 +412,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2017-05R19",
+      "czib_number": "CZIB-2017-05R20",
       "status": "Active",
       "issue_date": "31/03/2017",
-      "revision_date": "17/04/2026",
-      "valid_until": "31/10/2026",
+      "revision_date": "30/09/2026",
+      "valid_until": "30/04/2027",
       "subject": "Airspace of Somalia",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-05r19",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-05r20",
       "affected_airspace": "FIR Mogadishu (HCSM), below Flight Level (FL) 260.",
       "affected_countries": [
         "Somalia"
@@ -905,32 +931,11 @@
   ],
   "information_notes": [
     {
-      "id": "IN-SAUDI-ARABIA",
-      "status": "N/A",
-      "issue_date": "31/08/2026",
-      "revision_date": "N/A",
-      "valid_until": "30/09/2026",
-      "subject": "N/A",
-      "more_info_url": "N/A",
-      "affected_airspace": "N/A",
-      "affected_countries": [
-        "Saudi Arabia"
-      ],
-      "description": "N/A",
-      "recommendations": "Information Note on the threat and risk situation in the airspace of Saudi Arabia (FIR Jeddah - OEJD) Airspace affected: All altitudes/flight levels in the airspace of Saudi Arabia (Tel Jeddah - OEJD). Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
-      "applies_to_operators": "N/A",
-      "applicability_description": "N/A",
-      "referenced_publications": "N/A",
-      "affected_FIRs": [
-        "OEJD FIR"
-      ]
-    },
-    {
       "id": "IN-ISRAEL",
       "status": "N/A",
-      "issue_date": "31/08/2026",
+      "issue_date": "30/09/2026",
       "revision_date": "N/A",
-      "valid_until": "30/09/2026",
+      "valid_until": "16/11/2026",
       "subject": "N/A",
       "more_info_url": "N/A",
       "affected_airspace": "N/A",
