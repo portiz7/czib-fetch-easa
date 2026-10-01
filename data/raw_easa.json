@@ -1,6 +1,6 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-10-01T12:58:18.589737+00:00",
+  "fetched_at": "2026-10-01T22:35:09.107672+00:00",
   "czibs": [
     {
       "czib_number": "CZIB-2026-09",
@@ -386,19 +386,19 @@
       ]
     },
     {
-      "czib_number": "CZIB-2017-03R19",
+      "czib_number": "CZIB-2017-03R20",
       "status": "Active",
       "issue_date": "31/03/2017",
-      "revision_date": "12/05/2026",
-      "valid_until": "31/10/2026",
+      "revision_date": "01/10/2026",
+      "valid_until": "30/11/2026",
       "subject": "Airspace of Syria",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-03r19",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-03r20",
       "affected_airspace": "FIR Damascus (OSTT), all altitudes and flight levels.",
       "affected_countries": [
         "Syria"
       ],
-      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. The airspace over Syria continues to be affected by the presence of multiple military forces, including State and non-state actors, as well as recurrent foreign military operations. The risk of Israeli strikes and other military activities contribute to an overall volatile situation with the potential for rapid and unpredictable escalation. In terms of airspace management, fragmented control of the airspace and limited coordination mechanisms reduce the effectiveness of deconfliction and the timely dissemination of relevant information. The presence and potential activation of air defence systems, combined with ongoing military activity and a high level of alert among military forces, increase the likelihood of misidentification of civil aircraft. In addition, the presence of violent non-state actors with the capability to use unmanned aerial systems, rockets and MANPADS creates additional risks in the airspace. The combination of active military operations, air defence capabilities and limited mitigating factors results in a high risk to civil aviation at all altitudes and flight levels.",
-      "recommendations": "Air operators should: Not operate in the airspace of Syria at all altitudes and flight levels. Closely monitor airspace developments in the region and follow all available aeronautical publications issued by Syria, or on their behalf by the Aviation Authorities of the neighbouring States, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
+      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest and indicate areas of high risk. The airspace over Syria continues to be affected by the wider regional security dynamic, the presence of multiple State and non-State actors, as well as recurrent foreign military operations. Iranian missile and UAS transits towards Israel and US/Jordanian targets remain recurrent, but largely escalation driven. Their direct impact on civil overflights of Syria is generally assessed as limited due to the trajectories involved. However, interception activity against Iranian ballistic missiles targeting Israel or Jordan may create high risks to civil aviation in particular in south-western Syrian airspace. In addition, interceptions of ballistic missiles targeting Israel may take place at considerable distances from Israeli airspace and may result in falling debris affecting other parts of Syrian airspace. Israeli military strikes against targets in Syria remain recurrent, although they are generally limited in duration and concentrated in the south-west of the country. At the same time, the overall degradation of Syria’s long-range air-defence network has reduced the risk of misidentification and unintended engagement of civil aircraft. Air-defence systems associated with other State actors are assessed as primarily providing localised protection of specific areas and are not currently considered to have a significant direct impact on civil overflight operations. At lower altitudes, violent non-State actors retain capabilities, including UAS, rockets and MANPADS, creating additional risks primarily below FL260. Available data also indicate that kinetic and associated air-defence activity is concentrated predominantly during the hours of darkness. While improvements have been observed in the dissemination of aeronautical information and the management of conflict-related risks, fragmented control of the airspace and limited coordination mechanisms continue to constrain effective deconfliction and the timely dissemination of relevant information. Overall, the main risks to civil aviation remain concentrated in the south-western parts of Syria and at lower altitudes across the country. At higher altitudes, the risk to overflights is reduced. Nevertheless, regional escalation in the Middle East may result in missile and UAS activity, associated interceptions and falling debris, temporarily increasing risk exposure, including at higher flight levels. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
+      "recommendations": "Air operators should: Not operate at all flight levels and altitudes, west of the line connecting navigation points ZELAF – BASEM – LOTAX - LATEB , including airways segments forming this boundary. Not operate below FL 260 in the remainder of the FIR Damascus (OSTT). Exercise caution and take potential risks into account when operating at and above FL260 in the portion of the Damascus FIR (OSTT) not covered by point 1 above. Consider scheduling operations during daylight hours as an additional risk-mitigation measure. Ensure that an up-to-date risk assessment and a high level of contingency planning are in place for operations within the affected airspace, and be prepared for short notice instructions from the State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
       "applies_to_operators": true,
       "applicability_description": "Air operators: - subject to the provisions of Commission Regulation (EU) 965/2012, planning to conduct operations in the affected airspace (EASA operators); and - third Country Operators authorised by EASA, when conducting operations under their TCO authorisation to, from and within the EU (TCO operators).",
       "referenced_publications": [
@@ -930,6 +930,44 @@
     }
   ],
   "information_notes": [
+    {
+      "id": "IN-1",
+      "status": "N/A",
+      "issue_date": "01/10/2026",
+      "revision_date": "N/A",
+      "valid_until": "30/04/2027",
+      "subject": "N/A",
+      "more_info_url": "N/A",
+      "affected_airspace": "N/A",
+      "affected_countries": [],
+      "description": "N/A",
+      "recommendations": "Information Note on the threat and risk situation in the airspace of Niger. Airspace affected: Airspace of Niger located within FIR Niamey (DRRR) - below FL 260. Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
+      "applies_to_operators": "N/A",
+      "applicability_description": "N/A",
+      "referenced_publications": "N/A",
+      "affected_FIRs": [
+        "DRRR FIR"
+      ]
+    },
+    {
+      "id": "IN-2",
+      "status": "N/A",
+      "issue_date": "01/10/2026",
+      "revision_date": "N/A",
+      "valid_until": "30/04/2027",
+      "subject": "N/A",
+      "more_info_url": "N/A",
+      "affected_airspace": "N/A",
+      "affected_countries": [],
+      "description": "N/A",
+      "recommendations": "Information Note on the threat and risk situation in the airspace of the Democratic Republic of Congo (DRC) , FIR Kinshasa (FZZA). Airspace affected: Area defined by the parallels 01°00′00″N and 07°00′00″S, and the meridians 025°00′00″E and 030°00′00″E, limited to the territory and airspace of the DRC, FIR Kinshasa (FZZA) - below FL 260. Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
+      "applies_to_operators": "N/A",
+      "applicability_description": "N/A",
+      "referenced_publications": "N/A",
+      "affected_FIRs": [
+        "FZZA FIR"
+      ]
+    },
     {
       "id": "IN-ISRAEL",
       "status": "N/A",
