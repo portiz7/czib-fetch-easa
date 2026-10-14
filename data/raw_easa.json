@@ -1,6 +1,6 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-10-14T11:37:54.234868+00:00",
+  "fetched_at": "2026-10-14T16:59:51.484834+00:00",
   "czibs": [
     {
       "czib_number": "CZIB-2026-09-R1",
@@ -29,19 +29,19 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-08-R2",
+      "czib_number": "CZIB-2026-08-R3",
       "status": "Active",
       "issue_date": "22/07/2026",
-      "revision_date": "30/09/2026",
-      "valid_until": "16/10/2026",
+      "revision_date": "14/10/2026",
+      "valid_until": "16/11/2026",
       "subject": "Airspace of Jordan",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08-r2",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08-r3",
       "affected_airspace": "FIR Amman (OJAC), all altitudes and flight levels.",
       "affected_countries": [
         "Jordan"
       ],
-      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of high risk. As a consequence of the military conflict between the United States and Iran, the regional security situation remains highly volatile, with significant fluctuations in the level of kinetic military activity affecting Jordanian airspace. Periods of relative calm have been followed by renewed attacks, demonstrating the potential for a rapid deterioration with little or no warning. The renewed attacks in early September 2026 indicate deterioration of the security situation and the re-emergence of conditions associated with a high level of risk to civil aviation. Recurrent Iranian missile attacks, and to a lesser extent drone attacks, against assets located in Jordan, together with the activation of air-defence systems, create an increased risk of misidentification of civil aircraft, as well as risks associated with missile overflights, interception activity and falling debris. In terms of airspace management, no conflict-related airspace restrictions, route closures or operational advisories have been issued publicly by the Jordanian authorities despite the recent increase in military activity affecting the airspace. Therefore, operators should be prepared to comply with tactical deconfliction in the event of kinetic activity. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
-      "recommendations": "Air operators should: Not operate within the airspace of Jordan, FIR Amman (OJAC), at all altitudes and flight levels; Ensure that an up-do-date risk assessment is in place together with a high level of contingency planning for their operations and be ready for short notice instructions from State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
+      "description": "This CZIB is issued based on information currently available to EASA, the European Commission and Member States in order to share information which is considered necessary to ensure the safety of flights over zones of interest. As a consequence of the military conflict between the United States and Iran, the regional security situation remains volatile, with significant fluctuations in the level of kinetic military activity affecting Jordanian airspace. Previous periods of relative calm have been followed by renewed attacks, demonstrating the potential for a rapid deterioration with little or no warning. The absence of reported kinetic military activity affecting Jordanian airspace since 9 September up to the date of issuance of this bulletin indicates an improvement in the security situation, although the potential for renewed escalation requires operators to exercise caution and maintain appropriate contingency arrangements. During previous periods of escalation, Iranian missile attacks, and to a lesser extent drone attacks, against assets located in Jordan, together with the activation of air-defence systems, increased the risk of misidentification of civil aircraft, as well as risks associated with missile overflights, interception activity and falling debris. While the current absence of military activity indicates an improved security situation, the underlying factors that previously elevated the risk remain present. Should military operations resume, the associated risks to civil aviation could rapidly increase again. In terms of airspace management, no conflict-related airspace restrictions, route closures or operational advisories were issued publicly by the Jordanian authorities during the previous periods of escalation. Therefore, operators should maintain contingency arrangements and be prepared to comply with tactical deconfliction in the event of renewed kinetic activity. EASA, together with the Commission and Member States, will continue to closely monitor the situation, with a view to assess whether there is an increase or decrease of the risk for EU aircraft operators due to the evolution of the threat and risk situation.",
+      "recommendations": "Air operators should: Take potential risks into account when operating in the affected airspace; Ensure that an up-do-date risk assessment is in place together with a high level of contingency planning for their operations and be ready for short notice instructions from State authorities. Closely monitor airspace developments in the region and follow all available aeronautical publications concerning the region, including information shared through the European Information Sharing and Cooperation Platform on Conflict Zones, alongside available guidance or direction from their national authorities.",
       "applies_to_operators": true,
       "applicability_description": "Air operators: - subject to the provisions of Commission Regulation (EU) 965/2012, planning to conduct operations in the affected airspace (EASA operators). - third Country Operators authorised by EASA, when conducting operations under their TCO authorisation to, from and within the EU (TCO operators).",
       "referenced_publications": [
