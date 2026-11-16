@@ -1,15 +1,15 @@
 {
   "source": "EASA",
-  "fetched_at": "2026-11-16T06:01:56.823437+00:00",
+  "fetched_at": "2026-11-16T21:53:49.449527+00:00",
   "czibs": [
     {
-      "czib_number": "CZIB-2026-09-R1",
+      "czib_number": "CZIB-2026-09-R2",
       "status": "Active",
       "issue_date": "30/09/2026",
-      "revision_date": "09/10/2026",
-      "valid_until": "16/11/2026",
+      "revision_date": "16/11/2026",
+      "valid_until": "31/01/2027",
       "subject": "Airspace of Saudi Arabia",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-09-r1",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-09-r2",
       "affected_airspace": "FIR Jeddah (OEJD), all altitudes and flight levels.",
       "affected_countries": [
         "Saudi Arabia"
@@ -29,13 +29,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-08-R3",
+      "czib_number": "CZIB-2026-08-R4",
       "status": "Active",
       "issue_date": "22/07/2026",
-      "revision_date": "14/10/2026",
-      "valid_until": "16/11/2026",
+      "revision_date": "16/11/2026",
+      "valid_until": "31/01/2027",
       "subject": "Airspace of Jordan",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08-r3",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-08-r4",
       "affected_airspace": "FIR Amman (OJAC), all altitudes and flight levels.",
       "affected_countries": [
         "Jordan"
@@ -55,13 +55,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-07R3",
+      "czib_number": "CZIB-2026-07R4",
       "status": "Active",
       "issue_date": "14/07/2026",
-      "revision_date": "30/09/2026",
-      "valid_until": "16/11/2026",
+      "revision_date": "16/11/2026",
+      "valid_until": "31/01/2027",
       "subject": "Airspace of the Persian Gulf and Gulf of Oman",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-07r3",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-07r4",
       "affected_airspace": "All altitudes and flight levels in the airspace of: - Bahrain (Bahrain FIR – OBBB), - Kuwait (Kuwait FIR – OKAC), - Qatar (Doha FIR – OTDF), - United Arab Emirates (Emirates FIR – OMAE), and - Oman (FIR Muscat - OOMM).",
       "affected_countries": [
         "Bahrain",
@@ -89,13 +89,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-06-R2",
+      "czib_number": "CZIB-2026-06-R3",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "30/09/2026",
-      "valid_until": "16/11/2026",
+      "revision_date": "16/11/2026",
+      "valid_until": "31/01/2027",
       "subject": "Airspace of Lebanon",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-06-r2",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-06-r3",
       "affected_airspace": "FIR Beirut (OLBB), all altitudes and flight levels.",
       "affected_countries": [
         "Lebanon"
@@ -115,13 +115,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-05-R2",
+      "czib_number": "CZIB-2026-05-R3",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "30/09/2026",
-      "valid_until": "16/11/2026",
+      "revision_date": "16/11/2026",
+      "valid_until": "31/01/2027",
       "subject": "Airspace of Iraq",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-05-r2",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-05-r3",
       "affected_airspace": "FIR Baghdad (ORBB), all altitudes and flight levels.",
       "affected_countries": [
         "Iraq"
@@ -141,13 +141,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2026-04-R2",
+      "czib_number": "CZIB-2026-04-R3",
       "status": "Active",
       "issue_date": "08/07/2026",
-      "revision_date": "30/09/2026",
-      "valid_until": "16/11/2026",
+      "revision_date": "16/11/2026",
+      "valid_until": "31/01/2027",
       "subject": "Airspace of Iran",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-04-r2",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2026-04-r3",
       "affected_airspace": "FIR Tehran (OIIX), all altitudes and flight levels.",
       "affected_countries": [
         "Iran"
@@ -386,13 +386,13 @@
       ]
     },
     {
-      "czib_number": "CZIB-2017-03R20",
+      "czib_number": "CZIB-2017-03R21",
       "status": "Active",
       "issue_date": "31/03/2017",
-      "revision_date": "01/10/2026",
-      "valid_until": "30/11/2026",
+      "revision_date": "16/11/2026",
+      "valid_until": "30/04/2027",
       "subject": "Airspace of Syria",
-      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-03r20",
+      "more_info_url": "https://www.easa.europa.eu/en/domains/air-operations/czibs/czib-2017-03r21",
       "affected_airspace": "FIR Damascus (OSTT), all altitudes and flight levels.",
       "affected_countries": [
         "Syria"
@@ -931,6 +931,27 @@
   ],
   "information_notes": [
     {
+      "id": "IN-ISRAEL",
+      "status": "N/A",
+      "issue_date": "16/11/2026",
+      "revision_date": "N/A",
+      "valid_until": "31/01/2027",
+      "subject": "N/A",
+      "more_info_url": "N/A",
+      "affected_airspace": "N/A",
+      "affected_countries": [
+        "Israel"
+      ],
+      "description": "N/A",
+      "recommendations": "Information Note on the threat and risk situation in the airspace of Israel (FIR Tel Aviv - LLLL) Airspace affected: All altitudes/flight levels in the airspace of Israel (Tel Aviv FIR – LLLL). Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
+      "applies_to_operators": "N/A",
+      "applicability_description": "N/A",
+      "referenced_publications": "N/A",
+      "affected_FIRs": [
+        "LLLL FIR"
+      ]
+    },
+    {
       "id": "IN-ETHIOPIA",
       "status": "N/A",
       "issue_date": "30/10/2026",
@@ -952,7 +973,7 @@
       ]
     },
     {
-      "id": "IN-2",
+      "id": "IN-3",
       "status": "N/A",
       "issue_date": "01/10/2026",
       "revision_date": "N/A",
@@ -971,7 +992,7 @@
       ]
     },
     {
-      "id": "IN-3",
+      "id": "IN-4",
       "status": "N/A",
       "issue_date": "01/10/2026",
       "revision_date": "N/A",
@@ -987,27 +1008,6 @@
       "referenced_publications": "N/A",
       "affected_FIRs": [
         "FZZA FIR"
-      ]
-    },
-    {
-      "id": "IN-ISRAEL",
-      "status": "N/A",
-      "issue_date": "30/09/2026",
-      "revision_date": "N/A",
-      "valid_until": "16/11/2026",
-      "subject": "N/A",
-      "more_info_url": "N/A",
-      "affected_airspace": "N/A",
-      "affected_countries": [
-        "Israel"
-      ],
-      "description": "N/A",
-      "recommendations": "Information Note on the threat and risk situation in the airspace of Israel (FIR Tel Aviv - LLLL) Airspace affected: All altitudes/flight levels in the airspace of Israel (Tel Aviv FIR – LLLL). Civil air operators are advised to take potential risk into account in their risk assessment and routing decisions.",
-      "applies_to_operators": "N/A",
-      "applicability_description": "N/A",
-      "referenced_publications": "N/A",
-      "affected_FIRs": [
-        "LLLL FIR"
       ]
     },
     {
